@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>react app</title>
+    <link rel="shortcut icon" href="../images/銝餉矽.png">
+    <link rel="stylesheet" href="../css/darkhome.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-nav">
+            <div class="logo"><img src="../images/銝餉矽.png" alt="LOGO"></div>
+            <!-- 桌機版 nav -->
+            <nav class="nav-links">
+                <a href="#">首頁</a>
+                <a href="#">產品</a>
+                <a href="#contact">聯絡我們</a>
+                <a href="plan.html">方案</a>
+            </nav>
+        </div>
+        <div class="header-btns">
+            <button class="icon-btn"><a href="home.html">☀️ 日間模式</a></button>
+            <button class="icon-btn"><a href="dark-english-home.html">English</a></button>
+            <button class="icon-btn open-modal-btn">登入</button>
+        </div>
+
+        <!-- 手機版漢堡按鈕 -->
+        <button class="hamburger" id="hamburgerBtn" aria-label="開啟選單">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <!-- 手機版全螢幕選單 -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-close" id="mobileClose">✕</button>
+        <nav class="mobile-nav">
+            <a href="#">首頁</a>
+            <a href="#">產品</a>
+            <a href="#contact">聯絡我們</a>
+            <a href="plan.html">方案</a>
+        </nav>
+        <div class="mobile-btns">
+            <button class="icon-btn"><a href="home.html">☀️ 日間模式</a></button>
+            <button class="icon-btn"><a href="dark-english-home.html">English</a></button>
+            <button id="openModal" class="icon-btn mobile-login-btn open-modal-btn">登入</button>
+        </div>
+    </div>
+
+    
+<div id="loginModal" class="modal-overlay">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+
+    <div id="loginStep1">
+      <h2>歡迎回來</h2>
+      <p>請選擇您的登入方式</p>
+      <div class="auth-buttons">
+        <button class="auth-btn google-btn">
+          <img src="../images/google-logo.png" alt="Google">
+          Google 登入
+        </button>
+        <button class="auth-btn fb-btn">
+          <img src="../images/fb-logo.png" alt="FB">
+          Facebook 登入
+        </button>
+        <hr class="divider" data-content="或">
+        <button class="auth-btn user-btn" id="toStep2">用戶登入</button>
+        <button class="auth-btn register-btn">免費註冊</button>
+      </div>
+    </div>
+
+    <div id="loginStep2" style="display: none;">
+      <button id="backToStep1" class="back-link">← 返回選項</button>
+      <h2>帳號登入</h2>
+      <form id="emailLoginForm" class="login-form">
+        <div class="input-group">
+          <label>Email</label>
+          <input type="email" placeholder="請輸入您的電子信箱" required>
+        </div>
+        <div class="input-group">
+          <label>密碼</label>
+          <input type="password" placeholder="請輸入密碼" required>
+        </div>
+        <button type="submit" class="submit-btn">登入</button>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+    <section class="hero">
+        <h3>穿搭進化論</h3>
+        <h1>AI 風格<span>無極限</span></h1>
+        <p>讓 AI 描述您的穿搭主題，我們的 AI 系統就會為您的風格打造一套專屬的搭配，試試看吧！</p>
+        <button class="cta-btn" onclick="scrollToMain()">立即體驗</button>   
+    </section>
+
+    <main id="main-content">
+        <div class="feature-links">
+            <a href="#" class="big-btn">
+                <span class="btn-icon">✨</span>
+                <span class="btn-title">AI 穿搭建議</span>
+                <span class="btn-desc">專屬你的靈感，每天推薦新穿搭。</span>
+            </a>
+            <a href="#" class="big-btn">
+                <span class="btn-icon">🪞</span>
+                <span class="btn-title">虛擬試穿體驗</span>
+                <span class="btn-desc">手機即拍即換裝，輕鬆挑新衣。</span>
+            </a>
+            <a href="#" class="big-btn">
+                <span class="btn-icon">🎨</span>
+                <span class="btn-title">設計師平台</span>
+                <span class="btn-desc">作品上架全球，創作輕鬆變現。</span>
+            </a>
+        </div>
+
+        <div class="testimonial-container">
+            <div class="testimonial fade">「AI 建議的風格非常精準，省去我每天思考穿搭的時間！」— 使用者 A</div>
+            <div class="testimonial fade">「虛擬試穿的效果非常真實，讓我在線上買衣服更有信心。」— 使用者 B</div>
+            <div class="testimonial fade">「設計師平台讓我找到很多獨特的穿搭靈感，大推！」— 使用者 C</div>
+        </div>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-top">
+            <a href="#">關於我們</a>
+            <span class="footer-divider">|</span>
+            <a href="https://www.facebook.com/profile.php?id=61578842372553&ref=NONE_xav_ig_profile_page_web#">FB</a>
+            <span class="footer-divider">|</span>
+            <a href="https://www.instagram.com/g.r.a.i.l07/">IG</a>
+        </div>
+        <div class="footer-email">grail20260301ai@gmail.com</div>
+        <div class="footer-copy">© 2025 G.R.A.I.L</div>
+    </footer>
+
+    <script>
+        function scrollToMain() {
+            document.getElementById('main-content').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // 漢堡選單
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileClose = document.getElementById('mobileClose');
+
+        hamburgerBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('open');
+        });
+        mobileClose.addEventListener('click', () => {
+            mobileMenu.classList.remove('open');
+        });
+
+        mobileMenu.querySelectorAll('a, button').forEach(el => {
+            el.addEventListener('click', () => {
+                mobileMenu.classList.remove('open');
+            });
+        });
+
+        // 評價跑馬燈
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.testimonial');
+        function showSlides() {
+            slides.forEach(slide => slide.style.display = "none");
+            currentSlide++;
+            if (currentSlide > slides.length) { currentSlide = 1 }
+            slides[currentSlide - 1].style.display = "block";
+            setTimeout(showSlides, 3000);
+        }
+        showSlides();
+
+        // Modal
+        const modal = document.getElementById('loginModal');
+        const closeBtn = document.querySelector('.close-btn');
+        const step1 = document.getElementById('loginStep1');
+        const step2 = document.getElementById('loginStep2');
+        const toStep2Btn = document.getElementById('toStep2');
+        const backBtn = document.getElementById('backToStep1');
+        let isLoggedIn = false;
+
+        function openModal() {
+            modal.style.display = 'flex';
+        }
+
+        function closeModal() {
+            modal.style.display = 'none';
+            setTimeout(() => {
+                step1.style.display = 'block';
+                step2.style.display = 'none';
+            }, 300);
+        }
+
+        // 所有登入按鈕開啟 modal
+        document.querySelectorAll('.open-modal-btn').forEach(btn => {
+            btn.addEventListener('click', openModal);
+        });
+
+        // big-btn：未登入時攔截
+        document.querySelectorAll('.big-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                if (!isLoggedIn) {
+                    e.preventDefault();
+                    openModal();
+                }
+            });
+        });
+
+        // 用戶登入 → step2
+        toStep2Btn.addEventListener('click', () => {
+            step1.style.display = 'none';
+            step2.style.display = 'block';
+        });
+
+        // 返回 → step1
+        backBtn.addEventListener('click', () => {
+            step2.style.display = 'none';
+            step1.style.display = 'block';
+        });
+
+        // 關閉
+        closeBtn.addEventListener('click', closeModal);
+
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+    </script>
+</body>
+</html>
