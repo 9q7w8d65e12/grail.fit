@@ -6,14 +6,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // 定義價格數據
     const prices = {
         monthly: {
-            basic: 'NT$399 <span>/月</span>',
-            pro: 'NT$599 <span>/月</span>'
+            basic: 'NT$399 <span>/Month</span>',
+            pro: 'NT$599 <span>/Month</span>'
         },
         yearly: {
             // 參考圖片：年繳優惠通常為總額或大幅折扣後的平均
             // 這裡顯示折扣後的年繳總額
-            basic: 'NT$329 <span>/月 (省下 $840)</span>',
-            pro: 'NT$499 <span>/月 (省下 $1,200)</span>'
+            basic: 'NT$329 <span>/Month (save $840)</span>',
+            pro: 'NT$499 <span>/Month (save $1,200)</span>'
         }
     };
 

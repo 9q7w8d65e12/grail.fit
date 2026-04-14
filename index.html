@@ -128,9 +128,7 @@
         </div>
 
         <div class="testimonial-container">
-            <div class="testimonial fade">「AI 建議的風格非常精準，省去我每天思考穿搭的時間！」— 使用者 A</div>
-            <div class="testimonial fade">「虛擬試穿的效果非常真實，讓我在線上買衣服更有信心。」— 使用者 B</div>
-            <div class="testimonial fade">「設計師平台讓我找到很多獨特的穿搭靈感，大推！」— 使用者 C</div>
+            <div id="ai-testimonial" class="testimonial fade">正在計算最新評價...</div>
         </div>
     </main>
 
@@ -169,7 +167,7 @@
             });
         });
 
-        // 評價跑馬燈
+       // 評價跑馬燈
         let currentSlide = 0;
         const slides = document.querySelectorAll('.testimonial');
         function showSlides() {
