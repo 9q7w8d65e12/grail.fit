@@ -9,27 +9,37 @@
 
 <url>
   <loc>https://grail.fit/</loc>
-  <lastmod>2026-04-14T06:59:43+00:00</lastmod>
+  <lastmod>2026-04-14T16:55:58+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://grail.fit/html/plan.html</loc>
-  <lastmod>2026-04-14T06:59:43+00:00</lastmod>
+  <lastmod>2026-04-14T16:55:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://grail.fit/html/dark-home.html</loc>
-  <lastmod>2026-04-14T06:59:43+00:00</lastmod>
+  <lastmod>2026-04-14T16:55:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://grail.fit/html/english-home.html</loc>
-  <lastmod>2026-04-14T06:59:43+00:00</lastmod>
+  <lastmod>2026-04-14T16:55:57+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://grail.fit/index.html</loc>
+  <lastmod>2026-04-14T16:55:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>https://grail.fit/html/dark-english-home.html</loc>
-  <lastmod>2026-04-14T06:59:43+00:00</lastmod>
+  <lastmod>2026-04-14T16:55:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://grail.fit/html/plan-english.html</loc>
+  <lastmod>2026-04-14T16:55:58+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
