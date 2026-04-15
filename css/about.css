@@ -362,7 +362,7 @@ h2 {
 }
 
 .join-card {
-    background: var(--card-bg);
+    background: rgba(255, 255, 255, 0.473);
     border-radius: 16px;
     padding: 48px 60px;
     text-align: center;
