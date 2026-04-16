@@ -72,6 +72,10 @@ header {
     cursor: pointer;
     font-size: 0.85rem;
     transition: background 0.2s, border-color 0.2s;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .icon-btn:hover {
@@ -79,24 +83,19 @@ header {
     border-color: #fff;
 }
 
-.icon-btn a {
-    color: inherit;
-    text-decoration: none;
-}
 
-.icon-btn a:active {
-    color: #888;
-}
 
 /* 第一個按鈕（夜間模式） */
-.icon-btn:nth-child(2) {
+.icon-btn:nth-child(2),
+.icon-btn-green {
     background: #68b1c4;
     border-color: #68b1c4;
     color: #111;
     font-weight: bold;
 }
 
-.icon-btn:nth-child(2):hover {
+.icon-btn:nth-child(2):hover,
+.icon-btn-green:hover {
     background: #68b1c4;
 }
 
